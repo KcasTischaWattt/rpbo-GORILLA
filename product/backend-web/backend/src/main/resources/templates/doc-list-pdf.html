@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        body {
+            font-family: "Arial Unicode MS", Arial, sans-serif;
+            -fs-pdf-font-embed: embed;
+            -fs-pdf-font-encoding: Identity-H;
+            margin: 20px;
+        }
+        .document {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .header {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .tag {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 3px 8px;
+            margin: 2px;
+            border-radius: 4px;
+        }
+        .annotation {
+            margin: 5px 0;
+            padding-left: 10px;
+            border-left: 3px solid #3498db;
+        }
+        .text-content {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: 10px 0;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<h1>Список документов</h1>
+
+<div th:each="doc : ${docList}" class="document">
+    <h2 class="header" th:text="${doc.title} ?: 'Без названия'"></h2>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <td th:text="${doc.id}"></td>
+        </tr>
+        <tr>
+            <th>Источник</th>
+            <td th:text="${doc.rusSource} ?: 'Не указан'"></td>
+        </tr>
+        <tr>
+            <th>Дата публикации</th>
+            <td th:text="${#dates.format(doc.date, 'dd/MM/yyyy')}"></td>
+        </tr>
+        <tr>
+            <th>Последнее изменение</th>
+            <td th:text="${doc.lastEdit != null} ? ${#dates.format(doc.lastEdit, 'dd/MM/yyyy')} : 'Нет данных'"></td>
+        </tr>
+        <tr>
+            <th>Язык</th>
+            <td th:text="${doc.language}"></td>
+        </tr>
+        <tr>
+            <th>Рейтинг</th>
+            <td>
+                <span th:if="${doc.ratingSummary != null}">Общий: [[${doc.ratingSummary}]]</span>
+                <span th:if="${doc.ratingClassification != null}">Классификация: [[${doc.ratingClassification}]]</span>
+                <span th:if="${doc.ratingSummary == null && doc.ratingClassification == null}">Нет оценок</span>
+            </td>
+        </tr>
+        <tr>
+            <th>Теги</th>
+            <td>
+                <span th:each="tag : ${doc.tagNames}" class="tag" th:text="${tag}"></span>
+                <span th:if="${#lists.isEmpty(doc.tagNames)}">Нет тегов</span>
+            </td>
+        </tr>
+        <tr>
+            <th>URL</th>
+            <td><a th:href="${doc.url}" th:text="${doc.url}"></a></td>
+        </tr>
+    </table>
+
+    <h3>Текст документа:</h3>
+    <div class="text-content" th:text="${doc.text} ?: 'Текст отсутствует'"></div>
+</div>
+</body>
+</html>

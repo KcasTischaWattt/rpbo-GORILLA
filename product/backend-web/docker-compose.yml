@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./backend
+    image: cehhghost/crosswords_backend:0.4.0-DEVELOPMENT
+    # cehhghost/crosswords_backend:latest
+    ports:
+      - "8081:8081"  # Пробрасываем порт Spring Boot
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - shared_network
+    environment:
+      OPENSEARCH_URIS: ${OPENSEARCH_URIS}
+      OPENSEARCH_USERNAME: ${OPENSEARCH_USERNAME}
+      OPENSEARCH_PASSWORD: ${OPENSEARCH_PASSWORD}
+      SPRING_DATASOURCE_URL: jdbc:postgresql://backend-postgres:5432/crossword_new
+      SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+      SPRING_JPA_HIBERNATE_DDL_AUTO: ${SPRING_JPA_HIBERNATE_DDL_AUTO}
+      SPRING_JPA_PROPERTIES_HIBERNATE_SHOW_SQL: ${SPRING_JPA_PROPERTIES_HIBERNATE_SHOW_SQL}
+      JWT_SECRET: ${JWT_SECRET}
+      BACKEND_SECRET_KEY: ${BACKEND_SECRET_KEY}
+      DEFAULT_ADMINS_PASSWORD: ${DEFAULT_ADMINS_PASSWORD}
+      CREATE_SWAGGER: ${CREATE_SWAGGER}
+      CROSSWORDS_FIREBASE_CREDENTIALS: ${CROSSWORDS_FIREBASE_CREDENTIALS}
+      CROSSWORDS_FIREBASE_PROJECTID: ${CROSSWORDS_FIREBASE_PROJECTID}
+      TELEGRAM_BOT_INTERNAL_SECRET: ${TELEGRAM_BOT_INTERNAL_SECRET}
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: crossword_new
+      POSTGRES_USER: ${SPRING_DATASOURCE_USERNAME}
+      POSTGRES_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      shared_network:
+        aliases:
+          - backend-postgres
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  postgres-data:
+networks:
+  shared_network:
+    external: true

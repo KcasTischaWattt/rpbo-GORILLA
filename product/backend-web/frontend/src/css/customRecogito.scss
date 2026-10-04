@@ -1,0 +1,108 @@
+
+.r6o-widget.comment {
+  background-color: #ffffff; 
+  color: $secondary;
+}
+
+.q-dark .r6o-widget.comment {
+  background-color: $dark; 
+  color: #ffffff;
+}
+
+.q-dark .r6o-editable-text {
+  max-height: 120px;
+  overflow: auto;
+  outline: none;
+  min-height: 2em;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.q-dark .r6o-arrow-down {
+  color: $primary;
+}
+.q-dark .r6o-widget.comment .r6o-arrow-down.r6o-menu-open {
+  border-color: $primary;
+}
+
+.q-dark .r6o-widget.comment .r6o-comment-dropdown-menu {
+  background-color: $dark;
+  border: 1px solid $dark;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.q-dark .r6o-widget.comment .r6o-comment-dropdown-menu li:hover {
+  background-color: $dark-button-hover;
+}
+.q-dark .r6o-widget.comment.editable {
+  background-color: $dark;
+}
+
+.q-dark .r6o-footer {
+  background-color: $dark;
+  border-top-color: $dark;
+}
+
+.r6o-widget.comment .r6o-arrow-down {
+  border-radius: 5px;
+}
+
+.q-dark .r6o-widget.comment .r6o-arrow-down {
+  background-color: $dark;
+  color: white;
+  border-radius: 5px;
+}
+.q-dark .r6o-editor .r6o-footer .r6o-btn.delete-annotation {
+  color: white;
+  
+}
+
+.q-dark .r6o-editor .r6o-footer .r6o-btn.delete-annotation:hover {
+  color: #fff;
+  background-color: $negative;
+}
+
+.r6o-editor .r6o-footer .r6o-btn.delete-annotation:hover {
+  background-color: $negative;
+}
+
+.r6o-btn {
+  background-color: $primary;
+  border: 1px solid $primary;
+  box-sizing: border-box;
+  color: $secondary;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 6px 18px;
+  min-width: 70px;
+  vertical-align: middle;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.r6o-btn:hover {
+  background-color: $primary-button-hover;
+  border-color: $primary-button-hover;
+}
+.r6o-btn.outline {
+  border: 1px solid $secondary;
+  color: white;
+  background-color: $secondary;
+  text-shadow: none;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+.r6o-btn.outline:hover {
+  border: 1px solid $dark-button-hover;
+  color: white;
+  background-color: $dark-button-hover;
+}

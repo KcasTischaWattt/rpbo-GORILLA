@@ -1,0 +1,69 @@
+// app global css in SCSS form
+@font-face {
+    font-family: 'NeueHaasUnica';
+    src: url('../assets/fonts/NeueHaas/Linotype - Neue Haas Unica W1G.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;  
+  }
+  
+  @font-face {
+    font-family: 'NeueHaasUnicaBold';
+    src: url('../assets/fonts/NeueHaas/Linotype - Neue Haas Unica W1G Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'TinkoffSans';
+    src: url('../assets/fonts/TinkoffSans/TinkoffSans_Regular.otf') format('opentype');
+    font-weight: normal; 
+    font-style: normal; 
+  }
+  
+  @font-face {
+    font-family: 'TinkoffSansBold';
+    src: url('../assets/fonts/TinkoffSans/TinkoffSans_Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'NeueHaasUnica', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'TinkoffSansBold', sans-serif;
+  }
+
+  .caption {
+    font-family: 'TinkoffSansBold', sans-serif;
+  }
+  .UIText {
+    font-family: 'NeueHaasUnica', sans-serif;
+  }
+
+  .page-body {
+    @media (min-width: 1024px) {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+    @media (min-width: 1300px) {
+      padding-left: 300px;
+      padding-right: 300px;
+    }
+    @media (min-width: 1920px) {
+      padding-left: 400px;
+      padding-right: 400px;
+    }
+  }
+  
+
+  .flat-button-text {
+    font-family: 'NeueHaasUnica', sans-serif;
+    font-size: 16px;
+  }
+
+ .bg-dark-surface {
+  background: #121212 !important;
+  color: white !important;
+}
