@@ -1,0 +1,54 @@
+{
+  "retrieved_on": "2026-10-04",
+  "course_commit": "5ce5fdf4ba4bb32ac62d1b9c6728f3a6d8fa6884",
+  "course_repository": "https://github.com/hse-rbpo-master-2026/course",
+  "files": [
+    {
+      "file": "ai-usage.md",
+      "sha256": "e997d10e09d9b0e2238a3ccf972acb9b339c5df0e66d6eacd5df842be2d28903"
+    },
+    {
+      "file": "assessment.md",
+      "sha256": "80599504efcbf59e22f9addb599f04af80dd47e7dd1e451d4abe4d72628f416b"
+    },
+    {
+      "file": "project-README.md",
+      "sha256": "0c60e7716b3fc146f5aec36ccbbb791d4bf0529485a52743609b639d4f95d315"
+    },
+    {
+      "file": "project-project-template.md",
+      "sha256": "fa3178d0ca3ee302ff1b78f0b08ec8e714a1b50935e7be9eb380abefb8b0d6de"
+    },
+    {
+      "file": "resources.md",
+      "sha256": "854a33237ecebdf57f97ef1aa159e2dc19fffb1efdc856401836685557407c5d"
+    },
+    {
+      "file": "seminars-S01.md",
+      "sha256": "4b6a7088089725a46aff1442555aad17b141f99848957b2a62dd3731b0240a6c"
+    },
+    {
+      "file": "seminars-S02.md",
+      "sha256": "be1c93466589ca55f86223f1b5abf248d66f93937f9c2865708d0dc9116bc9bb"
+    },
+    {
+      "file": "seminars-S03.md",
+      "sha256": "add43eeddb20ac07830a35f5b9b0698477c9bba1733955cdd555ca1b58c5528a"
+    },
+    {
+      "file": "seminars-S04.md",
+      "sha256": "30154068dece1acef72c8463cf4fc70a272eb455dd900599bd9202bc546d055c"
+    },
+    {
+      "file": "seminars-S05.md",
+      "sha256": "51e84150b5d27a5db9127b634135a66112c68eaf525f2f1f3d836fe117eee969"
+    },
+    {
+      "file": "seminars-S06.md",
+      "sha256": "df832550b237dc5185728de26856c973192f0520204d642fcd46cf6d77c97216"
+    }
+  ],
+  "asvs_version": "5.0.0",
+  "asvs_release": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0_release",
+  "asvs_csv_sha256": "6124dba176dc563f66363a11ae0c47f9b86b8a4a84c66a793670bd196ed86cd5"
+}

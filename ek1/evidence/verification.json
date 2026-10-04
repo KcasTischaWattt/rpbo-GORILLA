@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": {
+    "product_files": 544,
+    "source_blocks": 16,
+    "markdown_files": 12,
+    "local_links": 112,
+    "probe": "repeated unchanged baseline functions",
+    "limits": "Package integrity only; semantic audit, user review, runtime and defense are separate"
+  },
+  "errors": []
+}

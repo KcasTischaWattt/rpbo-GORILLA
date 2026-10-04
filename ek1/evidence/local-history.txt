@@ -1,0 +1,7 @@
+640de504f232d6cd99fc1bd35ead266d4bcbb824 added docs
+2c80a6107f5e816075bffcf9c1f25659c25dd28b Update README.md
+dece015c894b38af78539a6742ee1e10f4d5008a Delete docs/1
+4b422a0744eac16ce435ba4f59d1b6a6010f0e8b Add files via upload
+143cb70352821af56dce750099716eda05e1c641 Create 1
+08a4a8090cc3ad46479f0a731539f4716ad6c310 Prepare Crosswords project snapshot
+2325ffe5786ee7f6e9a0026c5d919c8a5ea75fa1 Initial commit

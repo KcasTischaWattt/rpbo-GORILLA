@@ -1,0 +1,9 @@
+{
+  "source": "product/classifier/news_service.py",
+  "source_sha256": "a7c3ac4603c9899a8f136bc30d13bcbf3fadc188183c4cdea52832b2263ef01d",
+  "scope": "unchanged send_to_backend and main; fake requests and KafkaConsumer; classifier/LLM mocked",
+  "backend_attempts_failed": 1,
+  "consumer_commits": 1,
+  "observation": "main commits a message after send_to_backend catches a backend error",
+  "limits": "No real Kafka, broker configuration, consumer restart, persistent storage or end-to-end delivery tested"
+}

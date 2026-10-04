@@ -1,0 +1,156 @@
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "strict-peer-dependencies". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "resolution-mode". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> media-corpus-frontend@0.0.1 build
+> quasar build
+
+
+ .d88888b.
+d88P" "Y88b
+888     888
+888     888 888  888  8888b.  .d8888b   8888b.  888d888
+888     888 888  888     "88b 88K          "88b 888P"
+888 Y8b 888 888  888 .d888888 "Y8888b. .d888888 888
+Y88b.Y8b88P Y88b 888 888  888      X88 888  888 888
+ "Y888888"   "Y88888 "Y888888  88888P' "Y888888 888
+       Y8b
+
+
+ Build mode............. spa
+ Pkg quasar............. v2.17.6
+ Pkg @quasar/app-vite... v2.1.0
+ Pkg vite............... v6.1.1
+ Debugging.............. no
+ Publishing............. no
+
+ App • Using quasar.config.js in "esm" format
+ App •  WAIT  • Compiling of SPA UI with Vite in progress...
+(node:14118) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Browserslist: browsers data (caniuse-lite) is 22 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ App •  DONE  • SPA UI compiled with success by Vite • 1618ms
+
+ Build summary with important files:
+ ╔══════════════════════════════════════════════╦══════════════╦══════════════╗
+ ║                                        Asset ║         Size ║      Gzipped ║
+ ╟──────────────────────────────────────────────╫──────────────╫──────────────╢
+ ║                assets/BackButton-DBv1o2Mj.js ║      0.28 KB ║      0.24 KB ║
+ ║                      assets/CBUZ-DHGSc7er.js ║      0.24 KB ║      0.18 KB ║
+ ║                assets/ClosePopup-BaMWtv0l.js ║      0.72 KB ║      0.41 KB ║
+ ║             assets/ConfirmDialog-Bp3mDeGh.js ║      1.52 KB ║      0.77 KB ║
+ ║                  assets/DataPage-Baos09r4.js ║      6.54 KB ║      2.57 KB ║
+ ║                assets/DigestCard-CCS_b-Lx.js ║      3.05 KB ║      1.51 KB ║
+ ║        assets/DigestExpolorePage-DqlsqLZj.js ║     29.83 KB ║     10.59 KB ║
+ ║                assets/DigestPage-BGpPA7w9.js ║      7.20 KB ║      3.06 KB ║
+ ║          assets/DocumentEditPage-h41GbWNL.js ║      6.91 KB ║      2.63 KB ║
+ ║              assets/DocumentPage-CXNtlEWC.js ║    316.53 KB ║     92.99 KB ║
+ ║              assets/DocumentTags-ClA57Bif.js ║      0.48 KB ║      0.36 KB ║
+ ║          assets/EmailConfirmPage--41EcxBg.js ║      3.99 KB ║      2.03 KB ║
+ ║             assets/ErrorNotFound-BG135db3.js ║      0.69 KB ║      0.50 KB ║
+ ║            assets/FilterSelector-BYxPX-Oj.js ║      1.42 KB ║      0.80 KB ║
+ ║            assets/FolderBookmark-CdvrZVi_.js ║      4.33 KB ║      1.88 KB ║
+ ║                 assets/IndexPage-y9v9sNXH.js ║      3.91 KB ║      1.88 KB ║
+ ║             assets/LandingLayout-Bhn1gPio.js ║      3.70 KB ║      1.60 KB ║
+ ║               assets/LandingPage-CW87XOsm.js ║     12.00 KB ║      4.47 KB ║
+ ║             assets/LockedContent-D8zOAUgg.js ║      0.92 KB ║      0.64 KB ║
+ ║                 assets/LoginPage-DM3t1qKp.js ║      2.29 KB ║      1.28 KB ║
+ ║                assets/MainLayout-BA_B0rFa.js ║      0.82 KB ║      0.48 KB ║
+ ║               assets/PrivacyPage-CmUV3NV1.js ║      9.87 KB ║      3.03 KB ║
+ ║                     assets/QCard-D9infTnO.js ║      0.54 KB ║      0.34 KB ║
+ ║              assets/QCardSection-NVzH27g7.js ║      0.33 KB ║      0.26 KB ║
+ ║                 assets/QCheckbox-D375qiBJ.js ║     13.18 KB ║      5.12 KB ║
+ ║                   assets/QDialog-Cmdena4h.js ║      6.04 KB ║      2.46 KB ║
+ ║            assets/QExpansionItem-6p3zWZso.js ║      9.62 KB ║      3.55 KB ║
+ ║                     assets/QForm-CrARGEiP.js ║      2.24 KB ║      1.06 KB ║
+ ║                      assets/QImg-23DkI0vL.js ║      3.41 KB ║      1.52 KB ║
+ ║                    assets/QInput-CevVuZUQ.js ║     25.98 KB ║      9.08 KB ║
+ ║                     assets/QItem-CEdJ36gO.js ║      2.36 KB ║      1.10 KB ║
+ ║                     assets/QList-rYLXkdY0.js ║      0.63 KB ║      0.37 KB ║
+ ║                     assets/QMenu-D9aVN2ae.js ║      6.53 KB ║      2.76 KB ║
+ ║                     assets/QPage-BImn3nZN.js ║      0.88 KB ║      0.48 KB ║
+ ║               assets/QPopupProxy-C3yIa2qb.js ║     29.20 KB ║      9.98 KB ║
+ ║                   assets/QSelect-IovBqo7x.js ║     28.14 KB ║      9.41 KB ║
+ ║                assets/QSeparator-rHwUun6W.js ║      0.99 KB ║      0.56 KB ║
+ ║              assets/QSpinnerDots-BdVXFjSp.js ║      1.27 KB ║      0.44 KB ║
+ ║                   assets/QToggle-BHWxlgPf.js ║      0.56 KB ║      0.36 KB ║
+ ║                  assets/QTooltip-Ct2julZB.js ║      3.46 KB ║      1.64 KB ║
+ ║              assets/RegisterPage-BaVpKXuk.js ║      2.92 KB ║      1.40 KB ║
+ ║                assets/SearchPage-B8d9Ct-I.js ║     11.80 KB ║      4.54 KB ║
+ ║     assets/ServerResponseSpinner-BW_7R5Hu.js ║      0.56 KB ║      0.41 KB ║
+ ║             assets/SidebarLayout-DrsPfghS.js ║      1.92 KB ║      0.99 KB ║
+ ║            assets/StatisticsPage-CqZ_33ih.js ║      0.64 KB ║      0.45 KB ║
+ ║        assets/SubscriptionButton-U9yqRmUE.js ║     11.86 KB ║      4.44 KB ║
+ ║        assets/SubscriptionCreate-CCOpVOR_.js ║      6.54 KB ║      2.52 KB ║
+ ║          assets/SubscriptionEdit-CnpEz1a9.js ║      8.03 KB ║      3.00 KB ║
+ ║          assets/SubscriptionPage-CNidYDcV.js ║      4.34 KB ║      1.99 KB ║
+ ║                 assets/TopNavbar-CirVJuzd.js ║      3.54 KB ║      1.49 KB ║
+ ║ assets/_plugin-vue_export-helper-DlAUqK2U.js ║      0.09 KB ║      0.10 KB ║
+ ║                 assets/analytics-FlRXqcfX.js ║      0.89 KB ║      0.57 KB ║
+ ║                assets/crosswords-DyVx0Vxf.js ║     24.26 KB ║      8.22 KB ║
+ ║     assets/crosswords_mono_white-JA64CWcK.js ║      0.11 KB ║      0.11 KB ║
+ ║                   assets/emitter-E5P-NQ8u.js ║      0.32 KB ║      0.20 KB ║
+ ║                    assets/format-DErZ0bIe.js ║      0.93 KB ║      0.53 KB ║
+ ║                     assets/index-B65OvgvF.js ║      0.45 KB ║      0.26 KB ║
+ ║                     assets/index-BalGSpqy.js ║    161.35 KB ║     59.12 KB ║
+ ║                    assets/portal-C0e_994-.js ║      0.53 KB ║      0.32 KB ║
+ ║                 assets/selection-f4rqpPJN.js ║      2.92 KB ║      1.23 KB ║
+ ║                     assets/touch-DXhCTAjF.js ║      0.65 KB ║      0.38 KB ║
+ ║                  assets/use-dark-nB-AUNjR.js ║      0.16 KB ║      0.16 KB ║
+ ║        assets/use-prevent-scroll-QLRYdTQQ.js ║      2.90 KB ║      1.18 KB ║
+ ║                assets/use-quasar-BNF1YzMi.js ║      0.08 KB ║      0.10 KB ║
+ ║               assets/use-timeout-BHJBbQuM.js ║      0.26 KB ║      0.21 KB ║
+ ║                 assets/useDrawer-BYP3rRxI.js ║      0.14 KB ║      0.14 KB ║
+ ╟──────────────────────────────────────────────╫──────────────╫──────────────╢
+ ║               assets/DigestCard-DnPnlLsJ.css ║      0.08 KB ║      0.09 KB ║
+ ║       assets/DigestExpolorePage-DjvI9_Ta.css ║      0.41 KB ║      0.26 KB ║
+ ║               assets/DigestPage-JnXzZLiG.css ║      0.20 KB ║      0.13 KB ║
+ ║             assets/DocumentPage-CpFssPEt.css ║     11.91 KB ║      2.58 KB ║
+ ║         assets/EmailConfirmPage-o0_CkorK.css ║      0.04 KB ║      0.06 KB ║
+ ║           assets/FilterSelector-CKjhVqyc.css ║      0.04 KB ║      0.06 KB ║
+ ║           assets/FolderBookmark-KCv4ydbG.css ║      0.18 KB ║      0.14 KB ║
+ ║                assets/IndexPage-Bn_ypB59.css ║      1.25 KB ║      0.53 KB ║
+ ║            assets/LandingLayout-B_pZqE_W.css ║      0.29 KB ║      0.22 KB ║
+ ║              assets/LandingPage-wUXlOuqb.css ║     13.31 KB ║      2.76 KB ║
+ ║            assets/LockedContent-J_ZCLBZ2.css ║      0.14 KB ║      0.13 KB ║
+ ║                assets/LoginPage-DdLyp3FZ.css ║      0.14 KB ║      0.12 KB ║
+ ║              assets/PrivacyPage-D6AwgbT-.css ║      0.05 KB ║      0.07 KB ║
+ ║             assets/RegisterPage-CvDQuvgt.css ║      0.14 KB ║      0.12 KB ║
+ ║               assets/SearchPage-CYCnDAI8.css ║      0.12 KB ║      0.12 KB ║
+ ║           assets/StatisticsPage-BqgWecDp.css ║      0.14 KB ║      0.13 KB ║
+ ║       assets/SubscriptionButton-B3Tw8I9K.css ║      0.07 KB ║      0.09 KB ║
+ ║       assets/SubscriptionCreate-CUK9r6bs.css ║      0.04 KB ║      0.06 KB ║
+ ║         assets/SubscriptionEdit-BIFfevdI.css ║      0.04 KB ║      0.06 KB ║
+ ║                assets/TopNavbar-BKba5yuY.css ║      0.21 KB ║      0.18 KB ║
+ ║                    assets/index-BGEZsPIx.css ║    197.48 KB ║     34.97 KB ║
+ ╟──────────────────────────────────────────────╫──────────────╫──────────────╢
+ ║                                   index.html ║      0.87 KB ║            - ║
+ ╠══════════════════════════════════════════════╬══════════════╬══════════════╣
+ ║                          Total JS (66 files) ║    800.81 KB ║            - ║
+ ║                         Total CSS (21 files) ║    226.28 KB ║            - ║
+ ╚══════════════════════════════════════════════╩══════════════╩══════════════╝
+
+ Build succeeded
+
+ Build mode............. spa
+ Pkg quasar............. v2.17.6
+ Pkg @quasar/app-vite... v2.1.0
+ Pkg vite............... v6.1.1
+ Debugging.............. no
+ Publishing............. no
+ Browser target......... es2022|firefox115|chrome115|safari14
+ =======================
+ Output folder.......... /Users/maximperest/Desktop/HSE/safe sw/rpbo-GORILLA/product/backend-web/frontend/dist/spa
+
+ Tip: Built files are meant to be served over an HTTP server
+      Opening index.html over file:// won't work
+
+ Tip: You can use "$ quasar serve" command to create a web server,
+      both for testing or production. Type "$ quasar serve -h" for
+      parameters. Also, an npm script (usually named "start") can
+      be added for deployment environments.
+      If you're using Vue Router "history" mode, don't forget to
+      specify the "--history" parameter: "$ quasar serve --history"
+
